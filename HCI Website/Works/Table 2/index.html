@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        *{
+            font-family: 'Popping', sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: linear-gradient(#dd8179,#ffa389);
+        }
+        section{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -1000;
+        }
+        section img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+        }
+
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: 10px inset orange;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #lowerleft{
+            border-radius: 40px;
+            background-color: aqua;
+            text-decoration: none;
+            color: black;
+            padding: 15px;
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+        }
+
+        #lowerleft:hover{
+            background-color: #ffa389;
+            color: white;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: 5px inset orange;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <img src="../../Image/bg.png">
+    </section>
+    <a href="../../Works.html" id="lowerleft">Go Back</a>
+
+		<table border="5" width="300" height="260" bgcolor="gray" class="center">
+            <tr>
+                <th colspan="2"><img src="Dota2.png" width="20" height="25" align="left">Dota 2<img src="steam.png" width="20" height="22" align="right"></th>
+            </tr>
+            <tr>
+                <td bgcolor="#a32b27">N/A</td>
+                <td height="200" bgcolor="#c9552e">
+                    Safe Lane Heroes
+                    <table border="5" bgcolor="gray" width="180" height="120">
+                        <tr>
+                            <th colspan="2" >Choices:</th>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#ffc445">Phantom Assassin</td>
+                            <td bgcolor="#ffc445">Anti-Mage</td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#ffc445">Slark</td>
+                            <td bgcolor="#ffc445">Ursa</td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+		</table>
+</html>
+</body>
+</html>

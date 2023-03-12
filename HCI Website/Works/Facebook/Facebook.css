@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css!family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popping', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient( white, #b2b7c9);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    width: 100%;
+    min-width: 980px;
+    background-color: #4c66a4;
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 3em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+header li{
+    list-style-type: none;
+    float: left;
+    text-align: left;
+    color: white;
+}
+header form{
+    margin-top: 15px;
+    float: right;
+}
+header form li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header form li a{
+    color: #A9BCF5;
+    text-decoration: none;
+}
+header form input[type="text"] {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 150px;
+    border: 1px solid #08298A;
+    height: 25px;
+    padding-left: 3px;
+}
+header form input[type="password"] {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 150px;
+    border: 1px solid #08298A;
+    height: 25px;
+    padding-left: 3px;
+}
+header form input[type="submit"] {
+    height: 25px;
+    margin-top: 20px;
+    background-color: #084B8A;
+    color: white;
+    border: 1px solid #08298A;
+}
+.div1 {
+    float: left;
+    margin-top: 28px;
+    width: 700px;
+    text-align: left;
+}
+
+.peng{
+    padding-left: 50px;
+    width: 820px;
+}
+.div1 p {
+    margin-top: 25%;
+    font-size: 30px;
+    padding-left: 50px;
+    font-family: arial;
+    font-weight: bold;
+    color: #0e385f;
+}
+.div2 {
+    float: right;
+    margin-top: 13%;
+    width: 600px;
+    text-align: left;
+}
+
+.div2 h1 {
+    margin: 0px;
+    font-size: 37px;
+    color: #0e385f;
+}
+
+.div2 p {
+    font-size: 35px;
+    color: #0e385f;
+}
+
+.div2 li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+.div2 #Firstname{
+    margin-left: 80px;
+}
+.div2 #Lastname{
+    margin-left: 81px;
+}
+
+.div2 #Email{
+    margin-left: 75px;
+}
+.div2 #Password{
+    margin-left: 45px;
+}
+.div2 #Iam{
+    margin-left: 120px;
+}
+.div2 #Bday{
+    margin-left: 93px;
+}
+
+.div2 #why{
+    font-size: 10px;
+    margin-left: 160px;
+
+}
+.div2 li input[type="submit"] {
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    margin-left: 160px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Freight Sans Bold', helvetica, arial, sans-serif !important;
+    font-weight: bold !important;
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+.div2 #create{
+    font-size: 13px;
+    margin-left: 70px;
+
+}
+
+.Footer {
+    width: 100%;
+    clear: both;
+    float: left;
+    margin-top: 30px;
+    min-width: 995px;
+    background-color: white;
+    text-align: left;
+}
+
+.footer1 {
+    width: 980px;
+    margin: 0px auto;
+    padding: 0px;
+    border-bottom: 1px solid #E6E6E6;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #848484;
+}
+
+.footer1 a {
+    color: #365899;
+    display: inline;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.footer1 a:hover {
+    text-decoration: underline;
+    }
+
+.footer2 {
+    width: 980px;
+    margin: 0px auto;
+    padding: 0px;
+    font-size: 12px;
+    color: #848484;
+}
+
+.footer2 a {
+    color: #365899;
+    display: inline-block;
+    margin: 5px;
+    margin-left: 0px;
+    min-width: 80px;
+    text-decoration: none;
+}
+.footer2 a:hover {
+    text-decoration: underline;
+}
+
+#lowerleft{
+    border-radius: 40px;
+    background-color: aqua;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+#lowerleft:hover{
+    background-color: #ffa389;
+    color: white;
+}

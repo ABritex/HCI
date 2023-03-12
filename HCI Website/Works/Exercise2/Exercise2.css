@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css!family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    font-family: 'Popping', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(#dd8179,#ffa389);
+}
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+table {
+    border: 5px outset orange;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0px;
+}
+.T1{
+    text-align: left;
+}
+.T2{
+    text-align: right;
+}
+.T3{
+    text-align: left;
+}
+.T4{
+    text-align: right;
+}
+.Cancel{
+    background-color: red;
+    color:white;
+    outline: none;
+    padding: 10px;
+    border: 0;
+    margin: 10px;
+    width: 70px;
+}
+.Submit{
+    background-color: green;
+    color:white;
+    outline: none;
+    padding: 10px;
+    border: 0;
+    width: 70px;
+}
+th{
+    background-image: linear-gradient(rgb(0, 255, 191), rgb(0, 255, 238));
+    padding: 10px;
+}
+td{
+    color: yellow;
+    background-color: rgb(97, 96, 95);
+    padding: 10px;
+}
+
+#lowerleft{
+    border-radius: 40px;
+    background-color: aqua;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+#lowerleft:hover{
+    background-color: #ffa389;
+    color: white;
+}
+

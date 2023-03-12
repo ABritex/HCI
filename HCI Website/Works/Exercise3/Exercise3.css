@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css!family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popping', sans-serif;
+}
+body{
+    background-image: linear-gradient(#dd8179,#ffa389);
+}
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1000;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#lowerleft{
+    border-radius: 40px;
+    background-color: aqua;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+#lowerleft:hover{
+    background-color: #ffa389;
+    color: white;
+}
+.con{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    border: 5px outset orange;
+    background-image:  linear-gradient(to bottom right, rgb(7, 193, 255), rgb(0, 255, 145));
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    
+}
+form p{
+    border: 1px solid rgb(0, 0, 0);
+    background-image: linear-gradient(rgb(0, 255, 251), rgb(0, 166, 255));
+    text-align: center;
+    padding: 5px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+form input, form textarea{
+    padding: 15px;
+    margin: 10px;
+    outline: none;
+    border: 0;
+    background-color: white;
+}
+form button{
+    background-image: linear-gradient(rgb(0, 255, 251), rgb(0, 166, 255));
+    border: 0;
+    outline: none;
+    color:orange;
+    font-size: 30px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Song</title>
+    <link rel="stylesheet" type="text/css" href="Song.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"></a>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About Me</a></li>
+            <li><a href="#" class="active">Song</a></li>
+            <li><a href="Works.html">Works</a></li>
+        </ul>
+    </header>
+
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="Videos/millie.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <h1>Sana ako nalang</h1>
+        <p>Remix by Heiakim</br>Cover by Kiichan</br>Song by Millie</p>
+        <button onclick="doSometing()" id="play">Play Now</button>
+    </div>
+
+    <audio loop id="mySong">
+        <source src="Sounds/Sana.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var mySong = document.getElementById("mySong")
+        let play = document.getElementById("play")
+
+        play.onclick = function doSometing(){
+                if(mySong.paused){
+                    mySong.play();
+                    document.getElementById("play").innerHTML = "Pause Now"
+                }else{
+                    mySong.pause();
+                    document.getElementById("play").innerHTML = "Play Now"
+                }
+            }
+    </script>
+</body>
+</html>

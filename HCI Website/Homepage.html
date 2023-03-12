@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="IT Courses">
+    <meta name="keywords" content="IT Courses">
+    <meta name="author" content="Nicholas John C. Abeleda">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Courses</title>
+    <link rel="stylesheet" type="text/css" href="Homepage.css">
+</head>
+
+<body>
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="Videos/video.mp4" type="video/mp4">
+    </video>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="#">IT Courses</a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <a href="#" class="desktop-item">Tutorials</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                    <ul class="drop-menu">
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">C++</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Python</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="desktop-item">Exercises</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Exercises and Quizes</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="img.jpg" alt="">
+                            </div>
+                            <div class="row">
+                                <header>Exercises</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">HTML Exercises</a></li>
+                                    <li><a href="#">C++ Exercises</a></li>
+                                    <li><a href="#">Java Exercises</a></li>
+                                    <li><a href="#">Python Exercises</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Quizes</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">HTML Quizes</a></li>
+                                    <li><a href="#">C++ Quizes</a></li>
+                                    <li><a href="#">Java Quizes</a></li>
+                                    <li><a href="#">Python Quizes</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Security services</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Site Seal</a></li>
+                                    <li><a href="#">VPS Hosting</a></li>
+                                    <li><a href="#">Privacy Seal</a></li>
+                                    <li><a href="#">Website design</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+
+    </header>
+    <section class="banner">
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        const navi = document.querySelector('.navi');
+        document.querySelector.toggle('active1');
+        navi.classList.toggle('active1');
+    </script>
+</body>
+
+</html>

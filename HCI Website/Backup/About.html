@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="About.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"></a>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#" class="active">About Me</a></li>
+            <li><a href="Song.html">Song</a></li>
+            <li><a href="Works.html">Works</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Image/bg.png">
+    </section>
+    <div class="container">
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h2>01</h2>
+                <h3>Name</h3>
+                <p>Nicholas John C. Abeleda</p>
+                <button id="modal-btn" class="button">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h2>02</h2>
+                <h3>Hobbies</h3>
+                <p>Programming, Arts, Reading, Watching, Gaming</p>
+                <button id="modal-btn2" class="button">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h2>03</h2>
+                <h3>Location</h3>
+                <p>0773 Quirino St. BRGY 6 San Jose Occidental Mindoro</p>
+                <button id="modal-btn3" class="button">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="Modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>About me</h2>
+            </div>
+            <div class="modal-body">
+                <p>print("Hello World!") im nicholas</p>
+                <img src="Image/Nics2.png">
+                </div>
+            <div class="modal-footer">
+            <h3></h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="Modal2" class="modal2">
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close2">&times;</span>
+            <h2>Hobbies</h2>
+            </div>
+            <div class="modal-body">
+              <img src="Image/nics4.jpg">
+
+                </div>
+            <div class="modal-footer">
+            <h3></h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="Modal3" class="modal3">
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close3">&times;</span>
+            <h2>Location</h2>
+            </div>
+            <div class="modal-body">
+                <img src="Image/Location.png">
+                </div>
+            <div class="modal-footer">
+            <h3></h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    const modal = document.querySelector('#Modal');
+    const modalBtn = document.querySelector('#modal-btn');
+
+    const modal2 = document.querySelector('#Modal2');
+    const modalBtn2 = document.querySelector('#modal-btn2');
+
+    const modal3 = document.querySelector('#Modal3');
+    const modalBtn3 = document.querySelector('#modal-btn3');
+
+    const closeBtn = document.querySelector('.close');
+    const closeBtn2 = document.querySelector('.close2');
+    const closeBtn3 = document.querySelector('.close3');
+
+    modalBtn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+
+    modalBtn2.addEventListener('click', openModal2);
+    closeBtn2.addEventListener('click', closeModal2);
+
+    modalBtn3.addEventListener('click', openModal3);
+    closeBtn3.addEventListener('click', closeModal3);
+
+    window.addEventListener('click', outsideClick);
+    window.addEventListener('click', outsideClick2);
+    window.addEventListener('click', outsideClick3);
+
+    function openModal() {
+      modal.style.display = 'block';
+    }
+
+    function openModal2() {
+      modal2.style.display = 'block';
+    }
+
+    function openModal3() {
+      modal3.style.display = 'block';
+    }
+
+    function closeModal() {
+      modal.style.display = 'none';
+    }
+    
+    function closeModal2() {
+      modal2.style.display = 'none';
+    }
+
+    function closeModal3() {
+      modal3.style.display = 'none';
+    }
+
+    function outsideClick(e) {
+      if (e.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+
+    function outsideClick2(e) {
+      if (e.target == modal2) {
+        modal2.style.display = 'none';
+      }
+    }
+
+    function outsideClick3(e) {
+      if (e.target == modal3) {
+        modal3.style.display = 'none';
+      }
+    }
+    </script>
+</body>
+</html>

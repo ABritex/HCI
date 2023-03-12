@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css!family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popping', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#dd8179,#ffa389)
+}
+
+header{
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo{
+    color: #00b7ff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #00b7ff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active{
+    background: #00b7ff;
+    color: #fff;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top,#000000, transparent);
+    z-index: 100;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#Lands{
+    z-index: 10;
+}
+
+section img#Glow{
+    z-index: 11;
+    mix-blend-mode: screen;
+}
+
+#text{
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    color: #fff;
+    -webkit-text-stroke: 3px black;
+    white-space: nowrap;
+    font-size: 4.5vw;
+    z-index: 9;
+}
+
+#btn{
+    text-decoration: none;
+    position: absolute;
+    top: 350px;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: black;
+    color: #fff;
+    font-size: 1.5em;
+    z-index: 9;
+}
+
+.sec{
+    position: relative;
+    padding: 90px;
+    background: #000000;
+}
+
+.sec h2{
+    font-size: 3.0em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p{
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.secs{
+    justify-content: space-between;
+
+    display: flex;
+}
+.secs .nics{
+    width: 25%;
+    padding: 20px 20px;
+}
+
+.clicksa{
+    display: flex;
+    height: 20px;
+    margin-right: 40%;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 30px;
+    border-radius: 40px;
+    background: #dd8179;
+    color: #fff;
+    font-size: 1.5em;
+}
+.clicksa:hover{
+    background: #ffffff;
+    color: #dd8179;
+}
+.loader{
+    background: #000000;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 100000;
+}
+
+.loader.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+.ring{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s infinite;
+}
+
+@keyframes ring{
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #00ff22;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #ff0000;
+    }
+}
+
+.ring::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255,255,255,.3);
+}
+
+span{
+    color: #737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 20px;
+    animation: text 3s ease-in-out infinite;
+    z-index: 1;
+}
+
+@keyframes text {
+    50%{
+        color: black;
+    }
+}
+
+@keyframes fadeOut {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
